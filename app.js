@@ -16,6 +16,12 @@ var Employee = require('./models/employee');
  
  
 //get all employee data from db
+
+app.get('/',(req,res)=>{
+    res.send('hello world');
+})
+
+
 app.get('/api/employees', async function(req, res) {
     try {
         // Fetch all employees from the database
